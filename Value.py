@@ -21,5 +21,5 @@ class Value():
         return len(self.value_dict)
     
 
-    def get_value_list(self):
+    def get_value_name(self):
         return list(self.value_dict.keys)
