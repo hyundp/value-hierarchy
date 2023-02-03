@@ -1,0 +1,5 @@
+import HierarchySystem
+
+hierarchy = HierarchySystem()
+
+
