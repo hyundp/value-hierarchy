@@ -4,7 +4,7 @@ class Value():
         'value' : weight
         -> str : float
         """
-        value_dict = {
+        self.value_dict = {
             # 그 일은 나에게 어떤 가치를 주는가?
             '사랑' : 3.7,
             '자산': 4.3,
@@ -16,7 +16,7 @@ class Value():
             '책임' : 3.6,
         }
 
-        time_dict = {
+        self.time_dict = {
             # 그 일은 어떤 시점에 가치를 주는가?
             '현재' : 3,
             '미래' : 5,
@@ -27,10 +27,16 @@ class Value():
     
 
     def get_value_name(self):
-        return list(self.value_dict.keys)
+        return list(self.value_dict.keys())
+    
+    def get_value_weight(self):
+        return list(self.value_dict.values())
 
     def get_value_dict(self):
         return self.value_dict
 
     def get_time_dict(self):
         return self.time_dict
+    
+    def get_time_weight(self):
+        return list(self.time_dict.values())
